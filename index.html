@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pumping Lemma Visualizer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script
+    id="MathJax-script"
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Pumping Lemma Visualizer</h1>
+
+    <!-- Step 1: Number of unique symbols -->
+    <label for="symbolCount">How many unique symbols?</label>
+    <input type="number" id="symbolCount" min="1" value="2"/>
+    <button id="setCount">Set</button>
+
+    <!-- Step 2: Dynamic symbol rows will appear here -->
+    <form id="symbolsForm"></form>
+
+    <!-- Final action -->
+    <button id="runProof" style="display:none;">Run Proof</button>
+
+    <div id="output" class="output"></div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p class="professor">Submitted to: Er. Swati Gautam</p>
+      <p class="members-title">Group Members:</p>
+        <div class="marquee">
+        <span>
+            Adarsh Shankar Rai (2300430130002) &nbsp; • &nbsp;
+            Ayush Maury (2300430130017) &nbsp; • &nbsp;
+            Jasjeet Singh (2300430130025) &nbsp; • &nbsp;
+            Mayank Vikram (2300430130027) &nbsp; • &nbsp;
+            Niteesh Kumar (2300430130033)
+        </span>
+        </div>
+  </footer>
+  
+  
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
