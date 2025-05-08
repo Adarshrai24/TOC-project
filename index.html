@@ -3,36 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pumping Lemma Visualizer</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script
-    id="MathJax-script"
-    async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+  <title>VM to PM Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Pumping Lemma Visualizer</h1>
+    <h1>Virtual to Physical Address Visualizer</h1>
 
-    <!-- Step 1: Number of unique symbols -->
-    <label for="symbolCount">How many unique symbols?</label>
-    <input type="number" id="symbolCount" min="1" value="2"/>
-    <button id="setCount">Set</button>
+    <label for="mode">Select Mode:</label>
+    <select id="mode">
+      <option value="paging">Paging</option>
+      <option value="segmentation">Segmentation</option>
+      <option value="seg_paging">Paging + Segmentation</option>
+      <option value="multilevel">Multilevel Paging</option>
+    </select>
 
-    <!-- Step 2: Dynamic symbol rows will appear here -->
-    <form id="symbolsForm"></form>
-
-    <!-- Final action -->
-    <button id="runProof" style="display:none;">Run Proof</button>
+    <form id="addressForm"></form>
 
     <div id="output" class="output"></div>
   </div>
 
   <footer class="footer">
     <div class="footer-content">
-      <p class="professor">Submitted to: Er. Swati Gautam</p>
+      <p class="professor">Submitted to: Er. Kritika Verma</p>
       <p class="members-title">Group Members:</p>
         <div class="marquee">
         <span>
@@ -44,10 +37,7 @@
         </span>
         </div>
   </footer>
-  
-  
-  
 
-  <script src="index.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
